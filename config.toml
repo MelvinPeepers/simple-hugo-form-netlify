@@ -1,0 +1,4 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Basic Netlify Form on Hugo'
+theme = 'basic'
