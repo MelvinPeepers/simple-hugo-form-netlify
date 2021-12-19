@@ -104,6 +104,7 @@ h1 {
 .form-fields {
     width: 96%;
     background-color: #0e1e25;
+    padding: 30px 0;
   }
 
   .form-fields form {
@@ -144,10 +145,20 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 96%;
-    margin-top: 30px;
+    margin: 30px 0;
     background-color: #0e1e25;
+    padding: 30px 0;
   }
 
   .form-explainer h2 {
-    margin-top: 30px;
+    margin: 20px 0;
+  }
+
+  .form-explainer ul {
+    text-align: center;
+  }
+
+  .form-explainer a {
+    color: #00c7b6;
+    text-decoration: none;
   }
