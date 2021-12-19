@@ -102,7 +102,7 @@ h1 {
   }
 
 .form-fields {
-    width: 100%;
+    width: 96%;
     background-color: #0e1e25;
   }
 
@@ -122,11 +122,12 @@ h1 {
 
 
   .form-fields button {
-    padding:8px 60px;
+    padding: 8px 70px;
     background-color: #48565b;
     color: #eaebec;
     border-radius: 6px;
     font-size: 1.7rem;
+    border: 0;
   }
 
   .form-fields button:hover {
@@ -142,7 +143,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 96%;
     margin-top: 30px;
     background-color: #0e1e25;
   }
