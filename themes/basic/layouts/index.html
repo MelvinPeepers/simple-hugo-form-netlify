@@ -84,7 +84,9 @@
         <h2>Adding Honeypot field</h2>
         <ul>
           <li>You can add a honeypot field to your form to help prevent bot form submissions.</li>
-          <l1>You'll want to add a netlify-honeypot attribute to your < form >.</l1>
+          <li>You'll want to add a netlify-honeypot attribute to your form.</li>
+          <li>In addition, after adding the netlify-honeypot attribute, you'll need to add a hidden form field.</li>
+          <li>If the form is submitted with the hidden input field completed, the form is then rejected as only a bot would see and complete the field.</li>
         </ul>
 
     </section>
