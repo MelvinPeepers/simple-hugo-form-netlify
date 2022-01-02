@@ -144,6 +144,10 @@ h1 {
     background-color: #7e878a;
   }
 
+  .formTxtfield {
+    border-radius: 6px;
+  }
+
   .form-btn button {
     margin: 0 auto;
   }
