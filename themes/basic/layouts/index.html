@@ -11,13 +11,15 @@
 </head>
 <body>
 
-  <h1 class="title">Simple Netlify Form in Hugo</h1>
+  <h1 class="title">Netlify Form in Hugo</h1>
 
   <div class="flex-container"> 
 
     <section class="form-fields">
 
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
+          <p class="hidden">
+            <label>Don’t fill this out if you’re human: (ignore) <input name="bot-field" /></label>
           <p>
             <label>Your Name: <input class="formTxtfield" type="text" name="name" /></label>   
           </p>
@@ -33,6 +35,7 @@
           <p>
             <label>Message: <textarea name="message"></textarea></label>
           </p>
+          <div data-netlify-recaptcha="true"></div>
           <p>
             <button class="form-btn" type="submit">Send</button>
           </p>
@@ -42,7 +45,7 @@
       
     <section class="form-explainer">   
 
-      <h2>What you need to add to create a simple Netlify form</h2>
+      <h2>What you need to add to create a HTML Netlify form</h2>
 
       <ul>
 
@@ -77,6 +80,20 @@
           <li>Enter information then click submit</li>
           <li>You should see a 'Thank you!'</li>    
           <li>Going back to the Forms tab, click on the form name under 'Active forms' and you should then see the form that was submitted.</li>
+        </ul>
+
+        <h2>Adding Honeypot field</h2>
+        <ul>
+          <li>You can add a honeypot field to your form to help prevent bot form submissions.</li>
+          <li>You'll want to add a netlify-honeypot attribute to your form.</li>
+          <li>In addition, after adding the netlify-honeypot attribute, you'll need to add a hidden form field.</li>
+          <li>If the form is submitted with the hidden input field completed, the form is then rejected as only a bot would see and complete the field.</li>
+        </ul>
+
+        <h2>Adding Recapcha to your form</h2>
+        <ul>
+          <li>Add the attribute data-netlify-recaptcha="true" to your form tag.</li>
+          <li>Then add a empty div where you want the capcha to appear on your site. Inside that div add the attribute data-netlify-recaptcha="true" again.</li>
         </ul>
 
     </section>
